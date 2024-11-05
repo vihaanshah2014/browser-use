@@ -20,7 +20,7 @@ from src import Agent
 
 logging.basicConfig(level=logging.INFO)
 
-llm = ChatOpenAI(model='gpt-4o')
+llm = ChatOpenAI(model='gpt-4o-mini')
 agent = Agent(
 	task='Opening new tabs to search for images of Albert Einstein, Oprah Winfrey, and Steve Jobs. Then ask user for further instructions.',
 	llm=llm,

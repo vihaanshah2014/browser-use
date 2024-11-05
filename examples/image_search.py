@@ -13,7 +13,7 @@ from src.controller.service import ControllerService
 people = ['Albert Einstein', 'Oprah Winfrey', 'Steve Jobs']
 task = f'Opening new tabs and searching for images for these people: {", ".join(people)}. Then ask me for further instructions.'
 controller = ControllerService(keep_open=True)
-model = ChatOpenAI(model='gpt-4o')
+model = ChatOpenAI(model='gpt-4o-mini')
 agent = AgentService(task, model, controller, use_vision=True)
 
 

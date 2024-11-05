@@ -28,7 +28,7 @@ def get_llm(provider: str):
 			model_name='claude-3-5-sonnet-20240620', timeout=25, stop=None, temperature=0.3
 		)
 	elif provider == 'openai':
-		return ChatOpenAI(model='gpt-4')
+		return ChatOpenAI(model='gpt-4o-mini')
 	else:
 		raise ValueError(f'Unsupported provider: {provider}')
 

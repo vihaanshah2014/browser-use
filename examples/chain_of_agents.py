@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO)
 # Persist the browser state across agents
 controller = Controller()
 
-model = ChatOpenAI(model='gpt-4o')
+model = ChatOpenAI(model='gpt-4o-mini')
 
 # Initialize browser agent
 agent1 = Agent(
